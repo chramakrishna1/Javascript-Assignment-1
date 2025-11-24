@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>caluclator</title>
+</head>
+
+<body>
+    <h2>grade caluclator</h2>
+
+
+    
+
+    <script>
+        let subj1 = parseInt(prompt('Enter first subject marks'))
+        let subj2 = parseInt(prompt('Enter second subject marks'))
+        let subj3 = parseInt(prompt('Enter third subject marks'))
+        let subj4 = parseInt(prompt('Enter fourth subject marks'))
+        let subj5 = parseInt(prompt('Enter fifth subject marks'))
+
+      let  total=subj1+subj2+subj3+subj4+subj5
+
+
+
+        let avg = total / 5;
+       alert(`the total of 5 marks is : ${ total}`)
+        alert(`the avg of 5 marks is : ${avg}`)
+
+
+
+       let grade;
+        if (avg > 90) {
+            grade = 'A+'
+            console.log(grade)
+        }
+        else if (avg <= 89 && avg>80 ) {
+            grade = 'A';
+            console.log(grade);
+        }
+
+
+        else if (avg<=79 && avg>70) {
+            grade = 'b';
+            console.log(grade);
+        }
+
+        else if (avg<=69 && avg>50) {
+            grade = 'c';
+            console.log(grade);
+        }
+
+        else if (avg<=49 && avg>40) {
+            grade = 'd';
+            console.log(grade);
+        }
+
+        else if(avg<40) {
+            grade = 'f'
+            console.log(grade)
+        }
+
+        else{console.log("invalid")}
+       </script>
+
+
+</body>
+
+</html>
